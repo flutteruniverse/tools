@@ -34,7 +34,9 @@ void main(List<String> arguments) async {
       },
       onNonMatch: (nonMatch) => '',
     );
-    if (index < 5 && l.startsWith(headers[index + 1])) index++;
+    if (index < (headers.length - 1) && l.startsWith(headers[index + 1])) {
+      index++;
+    }
     if (l.startsWith(headers[index])) {
       youtubeLines.add('${headers[index]}$title | $link\n');
       if (index == 0) {
@@ -61,13 +63,16 @@ void main(List<String> arguments) async {
   });
 
   // Show parsing text
-  print('YOUTUBE');
+  youtubeLines.add('\nVisita https://universoflutter.com para saber mais');
+  youtubeLines.add(
+      '\n\nCriado e editado por Matias de Andrea (https://deandreamatias.com)');
+  youtubeLines.add('\n\n#flutter #flutterDev #dart');
   final youtube = youtubeLines.join('\n').replaceAll('\n\n', '\n');
-  print(youtube);
+  print('YOUTUBE\n\n$youtube');
   youtubeFile.writeAsStringSync(youtube);
-  print('ANCHOR');
+
   final anchor = anchorLines.join('\n').replaceAll('\n\n', '\n');
-  print(anchor);
+  print('ANCHOR\n\n$anchor');
   anchorFile.writeAsStringSync(anchor);
 
   exit(0);
