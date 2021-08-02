@@ -15,4 +15,5 @@ doc/api/
 
 # Misc
 env.dart
-assets/*
+assets/anchor.txt
+assets/youtube.txt
