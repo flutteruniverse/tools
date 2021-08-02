@@ -23,14 +23,14 @@ void main(List<String> arguments) async {
     var title = l.splitMapJoin(
       RegExp(r'\[[^\]]*]', caseSensitive: false),
       onMatch: (match) {
-        return match.group(0).replaceAll('[', '').replaceAll(']', '');
+        return match.group(0)!.replaceAll('[', '').replaceAll(']', '');
       },
       onNonMatch: (nonMatch) => '',
     );
     var link = l.splitMapJoin(
       RegExp(r'\([^\)]*', caseSensitive: false),
       onMatch: (match) {
-        return match.group(0).replaceAll('(', '').replaceAll(')', '');
+        return match.group(0)!.replaceAll('(', '').replaceAll(')', '');
       },
       onNonMatch: (nonMatch) => '',
     );
