@@ -23,11 +23,6 @@ Tools to automate tasks to podcast [Universo Flutter](https://anchor.fm/universo
 
 CLI: `dart run -t bin/tools.dart`
 
-## Built with
-
-- [Dart](https://dart.dev/) - Dart is a client-optimized language for fast apps on any platform.
-- [Visual Studio Code](https://code.visualstudio.com/) - Code editing. Redefined.
-
 ## Author
 
 - **Matias de Andrea** - Mobile developer: [Website](https://deandreamatias.com), [GitHub](https://github.com/deandreamatias) and [Twitter](https://twitter.com/deandreamatias).
