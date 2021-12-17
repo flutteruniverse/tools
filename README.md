@@ -1,36 +1,36 @@
 # Tools
 
-Tools to automate tasks.
+[![Analyze code](https://github.com/flutteruniverse/tools/actions/workflows/test.yaml/badge.svg)](https://github.com/flutteruniverse/tools/actions/workflows/test.yaml)
+[![Paypal donate](https://img.shields.io/badge/paypal-donate-blue)](https://paypal.me/deandreamatias)
 
-![Analyze code](https://github.com/flutteruniverse/tools/workflows/Analyze%20code/badge.svg)
+## About the project
+
+Tools to automate tasks to podcast [Universo Flutter](https://anchor.fm/universoflutter).
 
 ## Features
 
 - **Convert text links to podcast and Youtube description**
 
-## Build application
+## Build and run
 
 ### Requirements
 
-- First, clone the repository with the 'clone' command, or just download the zip.
+1. Clone repository with 'git clone' command or just download the zip. `git clone git@github.com:flutteruniverse/tools.git`
+2. Then, download either Android Studio or Visual Studio Code. For more information about Dart installation procedure, check the [official install guide](https://dart.dev/get-dart).
+3. Install dependencies from pubspec.yaml by running `dart pub get` from the project root.
 
-```shell
-git clone https://github.com/flutteruniverse/tools.git
-```
+### Run
 
-- Then, download either Android Studio or Visual Studio Code, with their respective [Flutter editor plugins](https://flutter.dev/docs/get-started/editor). For more information about Flutter installation procedure, check the [official install guide](https://flutter.dev/docs/get-started/install).
-
-- Install dependencies from pubspec.yaml by running `flutter pub get` from the project root (see [using packages documentation](https://flutter.dev/docs/development/packages-and-plugins/using-packages#adding-a-package-dependency-to-an-app) for details and how to do this in the editor).
+CLI: `dart run -t bin/tools.dart`
 
 ## Built with
 
-- [Flutter](https://flutter.dev/) - Beautiful native apps in record time.
-- [Android Studio](https://developer.android.com/studio/index.html/) - Tools for building apps for Android devices.
+- [Dart](https://dart.dev/) - Dart is a client-optimized language for fast apps on any platform.
 - [Visual Studio Code](https://code.visualstudio.com/) - Code editing. Redefined.
 
 ## Author
 
-- **Matias de Andrea** - Mobile developer and UI/UX designer: [Website](https://deandreamatias.com), [GitHub](https://github.com/deandreamatias) & [Twitter](https://twitter.com/deandreamatias).
+- **Matias de Andrea** - Mobile developer: [Website](https://deandreamatias.com), [GitHub](https://github.com/deandreamatias) and [Twitter](https://twitter.com/deandreamatias).
 
 ## Contributing
 
